@@ -7,7 +7,7 @@ public final class LukAdminChat extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("[LukAdminChat] Enabling LukAdminChat v1.0.0");
-        getLogger().info("[LukAdminChat] Plugin LukAdminChat v1.0.0 has been enabled");
+        getLogger().info("[LukAdminChat] Plugin LukAdminChat v1.0.0 has been enabled ");
     }
 
     @Override
