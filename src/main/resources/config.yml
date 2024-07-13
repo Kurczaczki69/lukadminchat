@@ -1,0 +1,6 @@
+# CONFIGURATION FILE FOR PLUGIN LUKADMINCHAT v1.0.0
+# Author: _luku123_
+# Github: https://github.com/Kurczaczki69/lukadminchat/tree/master
+
+AdminChatPrefix: "!"
+AdminChatMsg: "&e(&lADMIN-CHAT&r&e) "
