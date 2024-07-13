@@ -3,4 +3,5 @@
 # Github: https://github.com/Kurczaczki69/lukadminchat/tree/master  (i have no idea how to use github lol)
 
 AdminChatPrefix: "!"
-AdminChatMsg: "&e(&lADMIN-CHAT&r&e) "
+# {PLAYER} is the username of the sender
+AdminChatMsg: "&e(&lADMIN-CHAT&r&6 | &e{PLAYER} ) "

@@ -20,6 +20,7 @@ public class ChatEvents implements Listener {
 
         if (msg.startsWith(cfg.getString("AdminChatPrefix"))) {
             String newmsg = msg.replace(cfg.getString("AdminChatPrefix"), "");
+            newmsg = newmsg.replace("{PLAYER}", e.getPlayer().getName());
 
             for (Player player1 : Bukkit.getOnlinePlayers()) {
                 if (player1.hasPermission("lukadminchat.use")) {

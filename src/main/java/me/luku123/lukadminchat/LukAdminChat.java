@@ -10,13 +10,13 @@ public final class LukAdminChat extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("[LukAdminChat] Enabling LukAdminChat v1.0.0");
+        getLogger().info("Enabling LukAdminChat v1.0.0");
         plugin = this;
 
         Bukkit.getServer().getPluginManager().registerEvents(new ChatEvents(), this);
         saveDefaultConfig();
 
-        getLogger().info("[LukAdminChat] Plugin LukAdminChat v1.0.0 has been enabled ");
+        getLogger().info("Plugin LukAdminChat v1.0.0 has been enabled ");
     }
 
     @Override
