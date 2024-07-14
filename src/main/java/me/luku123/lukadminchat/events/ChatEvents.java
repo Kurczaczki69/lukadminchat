@@ -17,14 +17,17 @@ public class ChatEvents implements Listener {
     @EventHandler
     public void OnChatSend(AsyncPlayerChatEvent e) {
         String msg = e.getMessage();
+        Player player = e.getPlayer();
 
-        if (msg.startsWith(cfg.getString("AdminChatPrefix"))) {
+        if (msg.startsWith(cfg.getString("AdminChatPrefix")) && player.hasPermission("lukadminchat.use")) {
             String newmsg = msg.replace(cfg.getString("AdminChatPrefix"), "");
-            newmsg = newmsg.replace("{PLAYER}", e.getPlayer().getName());
+
+            String prefixMsg = cfg.getString("AdminChatMsg");
+            prefixMsg = prefixMsg.replace("{PLAYER}", e.getPlayer().getName());
 
             for (Player player1 : Bukkit.getOnlinePlayers()) {
                 if (player1.hasPermission("lukadminchat.use")) {
-                    player1.sendMessage( cc.CC(cfg.getString("AdminChatMsg")) + cc.CC(newmsg));
+                    player1.sendMessage( cc.CC(prefixMsg) + cc.CC(newmsg));
                     e.setCancelled(true);
                 }
                 else {

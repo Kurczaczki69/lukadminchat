@@ -1,6 +1,5 @@
-# CONFIGURATION FILE FOR PLUGIN LUKADMINCHAT v1.0.0
+# CONFIGURATION FILE FOR PLUGIN LUKADMINCHAT v1.0.1
 # Author: _luku123_
-# Github: https://github.com/Kurczaczki69/lukadminchat/tree/master  (i have no idea how to use github lol)
 
 AdminChatPrefix: "!"
 # {PLAYER} is the username of the sender
